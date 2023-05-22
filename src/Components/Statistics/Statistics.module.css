@@ -1,0 +1,12 @@
+.statistics {
+  background-color: rgb(205, 205, 205);
+  width: 800px;
+  text-align: center;
+  margin: 10px;
+}
+
+.statList {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+}

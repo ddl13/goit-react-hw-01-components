@@ -1,0 +1,42 @@
+.profile {
+  background-color: gray;
+  width: 800px;
+  text-align: center;
+  margin: 10px;
+}
+
+.description {
+  background-color: white;
+  margin: 0 auto;
+  width: 600px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.tag,
+.location {
+  font-weight: 400;
+  color: gray;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  width: 600px;
+  background-color: lightgray;
+  padding: 0;
+  justify-content: space-between;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+}
+
+.label {
+  color: gray;
+}
