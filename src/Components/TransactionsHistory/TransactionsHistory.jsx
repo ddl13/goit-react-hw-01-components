@@ -17,11 +17,7 @@ const TransactionsHistory = ({ items }) => {
 
         <tbody>
           {items.map(item => {
-            return (
-              <tr key={item.id}>
-                <TransactionItem item={item} />
-              </tr>
-            );
+            return <TransactionItem item={item} key={item.id} />;
           })}
         </tbody>
       </table>
@@ -32,10 +28,7 @@ const TransactionsHistory = ({ items }) => {
 TransactionsHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.oneOfType([
-        PropTypes.string.isRequired,
-        PropTypes.number.isRequired,
-      ]),
+      id: PropTypes.string.isRequired,
     })
   ),
 };

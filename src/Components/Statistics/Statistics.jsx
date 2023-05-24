@@ -20,12 +20,12 @@ const Statistics = ({ title = '', data }) => {
 };
 
 Statistics.propTypes = {
-  stats: PropTypes.arrayOf(
+  title: PropTypes.string,
+  data: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.oneOfType([
-        PropTypes.string.isRequired,
-        PropTypes.number.isRequired,
-      ]),
+      id: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+      label: PropTypes.string.isRequired,
     })
   ),
 };
